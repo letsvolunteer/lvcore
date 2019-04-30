@@ -7,8 +7,8 @@ import org.springframework.web.client.RestTemplate;
 
 @ConfigurationProperties
 public class RestClient {
-    RestTemplate restTemplate = new RestTemplate();
-    String fbBaseUrl = "https://graph.facebook.com/v3.2";
+    private RestTemplate restTemplate = new RestTemplate();
+    private String fbBaseUrl = "https://graph.facebook.com/v3.2";
 
     @Value("${external.fb.client.id}")
     String fbClientId;
@@ -17,8 +17,9 @@ public class RestClient {
     String fbCs;
 
     public String getFbAccessToken(String code, String state) {
-        String path = "client_id="
+        String path = "client_id=";
         ResponseEntity<String> response
                 = restTemplate.getForEntity(fbBaseUrl + "/1", String.class);
+        return "";
     }
 }
