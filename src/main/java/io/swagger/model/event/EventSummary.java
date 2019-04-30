@@ -1,12 +1,9 @@
-package io.swagger.model;
+package io.swagger.model.event;
 
 import java.util.Objects;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import io.swagger.model.Location;
-import io.swagger.model.UserProfile;
+import io.swagger.model.user.UserProfile;
 import java.math.BigDecimal;
 import org.springframework.validation.annotation.Validated;
 import javax.validation.Valid;
@@ -210,7 +207,7 @@ public class EventSummary   {
     if (o == null) {
       return "null";
     }
-    return o.toString().replace("\n", "\n    ");
+    return o.toString().replace("\n", "\n   ");
   }
 }
 

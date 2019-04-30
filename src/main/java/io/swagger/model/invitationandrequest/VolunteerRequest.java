@@ -1,4 +1,4 @@
-package io.swagger.model;
+package io.swagger.model.invitationandrequest;
 
 import java.util.Objects;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -151,7 +151,7 @@ public class VolunteerRequest {
     if (o == null) {
       return "null";
     }
-    return o.toString().replace("\n", "\n    ");
+    return o.toString().replace("\n", "\n   ");
   }
 }
 
