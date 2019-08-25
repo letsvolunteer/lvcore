@@ -1,0 +1,5 @@
+ALTER TABLE `EVENT`
+ADD `volunteer_count_req` INTEGER DEFAULT NULL AFTER `skills`;
+
+ALTER TABLE `EVENT`
+ADD `country` VARCHAR(5) DEFAULT 'US' AFTER `zipcode`;
