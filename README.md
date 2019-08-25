@@ -11,9 +11,13 @@ This is an example of building a swagger-enabled server in Java using the Spring
 
 The underlying library integrating swagger to SpringBoot is [springfox](https://github.com/springfox/springfox)  
 
-Start your server as an simple java application  
+Start your server as an simple java application
+or by using the maven plugin: `mvn spring-boot:run`
+
+To start the application, you will need to provide the DB connection properties, the keystore password and
+the external OAuth client-id, client secret values in the application.properties.
 
 You can view the api documentation in swagger-ui by pointing to  
-http://localhost:8080/  
+https://invol.ve:8080/core/swagger-ui.html
 
 Change default port value in application.properties
