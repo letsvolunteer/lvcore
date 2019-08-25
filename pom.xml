@@ -49,7 +49,7 @@
                   to prevent Flyway from looking for our migration scripts only on the classpath -->
                 <configuration>
                     <driver>com.mysql.jdbc.Driver</driver>
-                    <url>jdbc:mysql://localhost/lvcore</url>
+                    <url>jdbc:mysql://localhost/lvcore?serverTimezone=UTC</url>
                     <user>root</user>
                     <password>DBPass@123!</password>
                     <locations>
@@ -73,7 +73,7 @@
                         <configuration>
                             <jdbc>
                                 <driver>com.mysql.jdbc.Driver</driver>
-                                <url>jdbc:mysql://localhost/lvcore</url>
+                                <url>jdbc:mysql://localhost/lvcore?serverTimezone=UTC</url>
                                 <user>root</user>
                                 <password>DBPass@123!</password>
                             </jdbc>
