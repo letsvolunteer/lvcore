@@ -61,9 +61,9 @@
                   to prevent Flyway from looking for our migration scripts only on the classpath -->
                 <configuration>
                     <driver>com.mysql.jdbc.Driver</driver>
-                    <url>jdbc:mysql://localhost/lvcore?serverTimezone=UTC</url>
-                    <user>root</user>
-                    <password>DBPass@123!</password>
+                    <url>jdbc:mysql://us-cdbr-iron-east-02.cleardb.net/heroku_32368dc0f395fbf</url>
+                    <user>b0af4082f786f3</user>
+                    <password>203a2799</password>
                     <locations>
                         <location>filesystem:src/main/resources/db/migration</location>
                     </locations>
