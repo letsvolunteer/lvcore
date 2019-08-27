@@ -6,7 +6,7 @@ CREATE TABLE `USER` (
   `id_provider` varchar(20) DEFAULT NULL,
   `properties` varchar(256) DEFAULT NULL,
   `created_on` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
-  `modified_on` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `modified_on` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   UNIQUE KEY `email` (`email`)
 ) ;
@@ -26,7 +26,7 @@ CREATE TABLE `EVENT` (
   `meeting_instructions` varchar(100) DEFAULT NULL,
   `skills` varchar(100) DEFAULT NULL,
   `created_on` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
-  `modified_on` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `modified_on` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   CONSTRAINT `host_id_fk` FOREIGN KEY (`host_id`) REFERENCES `USER` (`id`)
 );
