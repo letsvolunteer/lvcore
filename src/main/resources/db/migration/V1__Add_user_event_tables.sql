@@ -16,7 +16,7 @@ CREATE TABLE `EVENT` (
   `host_id` varchar(40) NOT NULL,
   `title` varchar(100) NOT NULL,
   `description` text,
-  `event_date_time` timestamp NOT NULL,
+  `event_date_time` timestamp DEFAULT NULL,
   `address1` varchar(250) DEFAULT NULL,
   `address2` varchar(250) DEFAULT NULL,
   `city` varchar(50) DEFAULT NULL,
